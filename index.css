@@ -1,0 +1,132 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-yellow:#FBFACD;
+    --very-light-pink:#DEBACE;
+    --very-light-purple: #BA94D1;
+    --s-purple: #7F669D;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color:  var(--very-light-yellow);
+}
+.header-text,
+footer{
+    background-color: var(--very-light-pink);
+}
+.image-container{
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+    color: var(--s-purple);
+}
+
+.header-text h1{
+    margin-top: 0px;
+    padding-top: 100px;
+    text-align: center;
+    color: var(--s-purple);
+    text-shadow: 1px 1px 2px var(--very-light-purple);
+}
+
+.header-text img{
+    border-radius: 50%;
+    height: auto;
+    width: 200px;
+}
+
+.text-base{
+    padding-left:15px ;
+}
+.cont {
+    justify-content: center;
+    margin: 15px;
+}
+
+.container-images {
+    display: flex;
+    width: 90%;
+    height: 400px;
+    margin: 10px;
+    overflow-x: scroll;
+    scroll-snap-align: center;
+    scroll-snap-type: x mandatory;
+}
+
+.images-sl {
+    flex: 0 0 100%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    padding: 15px;
+}
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
+
+
+.course-list {
+    color: var(--very-light-purple);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+.link-base{
+    color: var(--s-purple);
+    font-size: var(--lg);
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 0px;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 640px) {
+    body{
+        font-family: 'Quicksand', sans-serif;;
+        display: block;
+        margin: 24px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--very-light-pink);
+        background-color: var(--white);
+    }
+
+    .header-text{
+        padding: 0px;
+        margin: 0px;
+        border-radius: 9px 9px 0px 0px;
+    }
+
+    .header-text h1{
+        padding-top: 50px;
+    }
+    .content-text{
+        padding: 5px;
+    }
+
+    .image-container img{
+        width: 60%;
+    }
+}
